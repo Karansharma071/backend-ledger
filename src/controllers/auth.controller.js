@@ -33,7 +33,7 @@ async function userRegisterController(req, res) {
     },
     token,
   })
-  await emailService(user.email, user.name)
+  await emailService.sendRegistrationEmail(user.email, user.name)
 }
 
 async function userLoginController(req, res) {
