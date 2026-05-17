@@ -10,4 +10,10 @@ router.post(
   transacitonController.createTransaction,
 )
 
+router.post(
+  '/system/initial-funds',
+  authMiddleware.authSystemUserMiddleare,
+  transacitonController.createInitialFundsTransaction,
+)
+
 module.exports = router
