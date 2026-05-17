@@ -15,6 +15,6 @@ app.use('/api/account', accountRouter)
 app.use('/api/transaction', transacitonRouter)
 
 app.use('/', (req, res) => {
-  res.json('welcome to node server')
+  res.json('Welcome to NODE server of Ledger servvice')
 })
 module.exports = app
